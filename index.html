@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .map {
+            background-image: url('map.png');
+            background-color: black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+            width: 1048px;
+            height: 720px;
+        }
+        
+        .locator {
+            animation-duration: 10s;
+            /* Background pattern from Toptal Subtle Patterns */
+            background-image: url("loc.webp");
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-size: contain;
+            height: 50px;
+            width: 50px;
+            /* position: relative; */
+            position: absolute;
+            animation-name: move;
+            animation-timing-function: ease;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+        }
+        
+        @keyframes move {
+            0% {
+                top: 100px;
+                left: 175px;
+            }
+            8% {
+                top: 300px;
+                left: 175px;
+            }
+            16% {
+                top: 525px;
+                left: 175px;
+            }
+            24% {
+                top: 525px;
+                left: 300px;
+            }
+            33% {
+                top: 525px;
+                left: 600px;
+            }
+            41% {
+                top: 525px;
+                left: 800px
+            }
+            49% {
+                top: 425px;
+                left: 800px
+            }
+            58% {
+                top: 125px;
+                left: 800px
+            }
+            66% {
+                top: -10px;
+                left: 800px
+            }
+            74% {
+                top: -10px;
+                left: 650px
+            }
+            83% {
+                top: -10px;
+                left: 350px;
+            }
+            91% {
+                top: -10px;
+                left: 175px;
+            }
+            100% {
+                top: 100px;
+                left: 175px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="locator">
+        <!-- <img src="loc.webp" width =50 height =50> -->
+
+    </div>
+    <img src="map.png" width="1048" height="">
+</body>
+
+</html>
